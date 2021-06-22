@@ -3,9 +3,7 @@ class Team:
         self.name = input_name
         self.players = input_players
         self.coach = input_coach
-        self.add_player =
-        self.has_player = 
-        self.has_player = 
+        self.points = 0
 
     def team_has_name(self):
         return self.name
@@ -16,13 +14,18 @@ class Team:
     def team_has_coach(self):
         return self.coach
 
-    def can_add_new_player_to_team(self):
-        self.coach = "John Candy"
+    def add_player(self, name):
+        self.players.append("name")
 
-    # def can_add_new_player_to_team(self):
+    def has_player(self, player_to_find):
+        return self.players.count(player) > 0
+# alternative way
+        # for player in self.players:
+        #     if player == player_to_find:
+        #         return True
+        # return False
 
-    def check_player_in_team(self):
-        find_player = False
-        for player in self.players:
-           if player == find_player:
-              find_player = True
+
+    def play_game(self, game_won):
+        if game_won:
+            self.points += 3

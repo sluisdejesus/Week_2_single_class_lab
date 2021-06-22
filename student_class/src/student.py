@@ -3,10 +3,14 @@ class Student:
         self.name = input_name
         self.cohort = input_cohort
         
-        def student_has_name(self):
-            return input_name()
+    def student_has_name(self):
+            return self.name
 
-        def student_has_cohort(self):
-            return input_cohort
+    def student_has_cohort(self):
+            return self.cohort
 
-        
+    def talk(self):
+            return "I can talk!"
+
+    def say_favourite_language(self, language):
+            return f"I love {language}"
